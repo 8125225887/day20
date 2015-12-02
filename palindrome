@@ -1,0 +1,14 @@
+function palindrome() {
+    var num,number = 313,result = 0,rem = 0;
+    num = number;
+    while (num != 0 ) {
+        rem = num % 10;
+        result = result * 10 + rem;
+        num = num / 10;
+    }
+    if (result === number)
+       console.log("palindrome");
+    else
+       console.log("not palindrome");
+
+}

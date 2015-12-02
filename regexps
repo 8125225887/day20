@@ -1,0 +1,7 @@
+2) Write JavaScript code to replace all * with @ in the string "Hel*lo* W*orl*d"
+function stringReplace() {
+    var string = "Hel*lo* W*orl*d";
+    for(var i = 0; i < string.length; i++) {
+        console.log(string.replace(/\*/g,'@'));
+    }
+}

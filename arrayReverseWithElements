@@ -1,0 +1,14 @@
+var arr = ["abc", "cbd", "bbc", "ccd", "xyz"];
+function arrayReverse() {
+
+     var arr = ["abc", "cbd", "bbc", "ccd", "xyz"];
+     for (var i = 0; i < arr.length; i++) {
+        var string = '';
+        for (var j = 1; j <= arr[i].length; j++) {
+             string += arr[i].charAt(arr[i].length-j);
+        }
+         arr[i] = string;
+      }
+     arr.reverse();
+     console.log(arr);
+}
